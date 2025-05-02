@@ -1,0 +1,16 @@
+<web-app>
+	<filter>
+		<filter-name>PathInfoParserFilter</filter-name>
+		<filter-class>com.givainc.tomcat.jakarta.filters.PathInfoParserFilter</filter-class>
+		<init-param>
+			<param-name>pattern</param-name>
+			<param-value>^(/.+\.cf[cm])(/.*)</param-value>
+		</init-param>        
+	</filter>
+	<filter-mapping>
+		<filter-name>PathInfoParserFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>        
+	</filter-mapping>
+</web-app>
