@@ -4,8 +4,8 @@
 
     <groupId>com.givainc.tomcat.jakarta.filters</groupId>
     <artifactId>PathInfoParserFilter</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
